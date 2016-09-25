@@ -43,7 +43,7 @@
     <div class="col-md-6" ng-controller="AlreadyBoughtShoppingController as alreadyBought">
      <h2>Already in possession:</h2>
      <ul>
-       <li ng-repeat="toItemBought in alreadyBought.toBoughtItems">Already in possession {{ toItemBought.quantity }} {{ toItemBought.name }} </li>
+       <li ng-repeat="toItemBought in alreadyBought.toBoughtItems">Bought item: {{ toItemBought.quantity }} {{ toItemBought.name }} </li>
      </ul>
      <div class="emptyListMessage" ng-if="alreadyBought.toBoughtItems.length == 0">Everything is still needed.</div>
     </div>
